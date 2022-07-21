@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GadTeam</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section>
+            <header>
+                <a href="home.html" class="logo">GadTeam</a>
+                <div class="toggle" onclick="toggleMenu();">
+                <ul class="navigation">
+                    <li><a href="home.html" style="--i:1;">Home</a></li>
+                    <li><a href="#" style="--i:2;">Team</a></li>
+                </ul>
+                </div>
+            </header>
+            <div class="container">
+                <div class="box" style="--i:3;">
+                    <div class="imgBx img1">
+                        <a href="lagadteam.html#vrising"><img src="./asset/v-rising-guide-pierre-aiguiser.jpg"></a>
+                    </div>
+                </div>
+                <div class="box" style="--i:4;">
+                    <div class="imgBx">
+                        <a href="valheim.html#valhalla"><img src="./asset/Valheim-20-trucs-et-astuces-pour-les-debutants.png"></a>
+                    </div>
+                </div>
+                <div class="box" style="--i:5;">
+                    <div class="imgBx">
+                        <a href="ark.html#ark"><img src="./asset/apps.49771.13817182746640445.1152921504738443117.jpg"></a>
+                    </div>
+                </div>
+                <div class="box" style="--i:6;">
+                    <div class="imgBx">
+                        <a href="phasmous.html#divers"><img src="./asset/capsule_616x353.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <ul class="sci">
+                    <li><a href="https://discord.gg/UrJhD8fwek" style="--i:7;"> Discord</a></li>
+                    <li><a href="https://twitter.com/GaddwynOffi" style="--i:8;"> Twitter</a></li>
+                </ul>
+                <p class="copyrightText">Copyright © 2022 GadTeam.All right Reserved</p>
+            </div>
+        </section>
+        <script>
+
+            let imgBx = document.querySelectorAll('.imgBx');
+            imgBx.forEach(popup => popup.addEventListener('click', () =>{
+                popup.classList.toggle('active');
+            }))
+            
+            function toggleMenu(){
+                const menuToggle = document.querySelector('.toggle');
+                const navigation = document.querySelector('.navigation');
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
